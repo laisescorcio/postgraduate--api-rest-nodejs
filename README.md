@@ -21,6 +21,7 @@
     - Node.js v18.18.2 = "fastify": "^4.24.0"
         OR
     - Node.js v20+ = "fastify": "^5.2.1"
+- `npm i eslint @rocketseat/eslint-config -D` // eslint config
 
 ## To run
 - `npm run dev`

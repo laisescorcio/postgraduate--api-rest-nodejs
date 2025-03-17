@@ -47,4 +47,4 @@ Necessary to install `npm install -D @types/node`
 
 ## Tools
 
-- SQLite: relational data base (SQLite, MySQL, Postress) - good performance
+- SQLite: relational data base (SQLite, MySQL, PostgreSQL) - good performance

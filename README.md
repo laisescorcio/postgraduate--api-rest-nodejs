@@ -12,6 +12,7 @@
         OR
     - Node.js v20+ = "fastify": "^5.2.1"
 - `npm i eslint @rocketseat/eslint-config -D` // eslint config
+- `npm run knex -- migrate:make create-documents` // to create a data base table
 
 ## To run
 - `npm run dev`
@@ -44,6 +45,8 @@ Necessary to install `npm install -D @types/node`
             last_name: "User"
         }).select("id")` 
 - ORM
+
+- Migrations: to work with data bases with a team - version management (timeline of changes of the data base tables)
 
 ## Tools
 

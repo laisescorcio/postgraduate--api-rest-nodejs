@@ -12,10 +12,13 @@
         OR
     - Node.js v20+ = "fastify": "^5.2.1"
 - `npm i eslint @rocketseat/eslint-config -D` // eslint config
-- `npm run knex -- migrate:make create-documents` // to create a data base table
+- `npm run knex -- migrate:make {name-of-the-table}` // to create a data base table. Example: npm run knex -- migrate:make create-transactions
+- `npm run knex -- migrate:latest` // to run the migrations Up Method -- couldn't change after run and sended to the team
+- `npm run knex -- migrate:rollback` // to run the migrations Down Method
+
 
 ## To run
-- `npm run dev`
+- `npm run dev` + `http localhost:3333/{route}`
 
 ## Node + Typescript
 Necessary to install `npm install -D @types/node`
@@ -46,7 +49,12 @@ Necessary to install `npm install -D @types/node`
         }).select("id")` 
 - ORM
 
+### Migrations
 - Migrations: to work with data bases with a team - version management (timeline of changes of the data base tables)
+    - Up Method: to do the changes (create table, add a data, etc)
+        `export async function up(knex: Knex): Promise<void> {}`
+    - Down Method: to rollback what was done in Up Method (delete the table, delete the data, etc)
+        `export async function down(knex: Knex): Promise<void> {}`
 
 ## Tools
 

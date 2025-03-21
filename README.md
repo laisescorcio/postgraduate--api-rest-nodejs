@@ -1,5 +1,23 @@
 # postgraduate--api-rest-nodejs
 
+## FR - Functional Requirements
+[ ] The user must be able to create a new transaction;
+[ ] The user must be able to get a summary of his/her account;
+[ ] The user must be able to list all transactions that have ever occurred;
+[ ] The user must be able to view a single transaction;
+
+## BR - Business Rules
+[ ] The transaction can be a credit type that will add to the total amount, or a debit type that will subtract;
+[ ] It must be possible to identify the user among the requests;
+[ ] The user can only view transactions that he/she created;
+
+## NFR - Non-Functional Requirements
+
+
+
+
+
+
 ## To install
 - `npm install`
 - `npm i fastify`
@@ -60,3 +78,5 @@ Necessary to install `npm install -D @types/node`
 
 - SQLite: relational data base (SQLite, MySQL, PostgreSQL) - good performance
 - ZOD: lib to validate the datas and formats
+
+
